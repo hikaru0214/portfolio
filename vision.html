@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet">
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Noto Serif JP', serif;
+        background-color: rgba(255, 255, 255, 0.909);
+        height: 100vh;
+        font-family: Helvetica, sans-serif;
+    }
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: transparent;
+  transition: background-color 0.1s ease;
+}
+
+/* スクロール後のヘッダースタイル */
+header.scrolled {
+  background-color: rgb(255, 255, 255);
+  /*border-bottom: 0.2px solid #000;*/
+}
+
+nav {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 2rem;
+  height: 90px; /* 高さはお好みで */
+}
+
+nav p{
+  position: absolute;
+  left: 3%;
+  font-size: 26px;
+  color: rgb(0, 0, 0);
+}
+
+/* ナビゲーション */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  margin: 20px;
+  font-size: 20px;
+  padding-right: 0rem;
+  text-decoration: none;
+}
+
+nav ul li a.active {
+  color: rgb(241, 87, 31);
+  font-weight: bold;
+}
+
+
+a {
+  display: inline-block; /* ここが重要！ */
+  transition: transform 0.7s ease, color 0.7s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.title {
+  color: rgb(241, 87, 31);
+  padding: 6% 5%;
+  border-bottom: 0.2px solid #000;
+  padding-bottom: 0px;
+  width: 75%;
+  margin: 0 auto; /* ← 中央揃え */
+}
+
+
+.title h1 {
+  font-size: 80px;
+  margin: 0;
+}
+
+.title p {
+  font-size: 34px;
+  margin-top: -1%;
+}
+
+
+
+.vision {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2% 0;
+  height: auto; /* 自動調整に変更 */
+}
+
+.vision_text {
+   position: relative; 
+  color: #000000;
+  padding: 20px;
+  max-width: 70%;
+  margin: 0 auto;
+  text-align: left;
+  margin-top:0%;
+  z-index: 2;
+}
+
+
+.vision h1{
+  font-size: 28px;
+}
+
+.vision p{
+  font-size: 19px;
+  margin-top: 3%;
+}
+
+.first {
+      margin-right: 30px;
+}
+
+footer {
+  background-color: rgb(0, 0, 0);
+  color: #f9f9f9;
+  height: 380px;
+  display: flex;
+  margin-top: 5%;
+  align-items: center;
+  font-family: 'Comic Sans MS', sans-serif;
+}
+
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* ← ここで中央揃え！ */
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+
+  .footer_text {
+    display: flex;        /* 横または縦に並べる */
+    flex-direction: column; /* ← 縦方向に並ぶように指定（段落を縦に並べたい場合） */
+    gap: 3px;          
+    max-width: 60%;
+    text-align: left;
+    margin-left: 15%;
+  }
+
+  .footer_menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 上下中央揃え */
+  gap: 20px;
+  text-align: left;
+  font-size: 20px;
+  margin-right: 15%;
+}
+
+
+  .footer_menu a {
+    text-decoration: none;
+    color: #e3e3e3;
+    font-size: 20px;
+  }
+
+</style>
+</head>
+
+<body>
+    <header>
+    <nav>
+      <p>Y O S H I D A<br>H I K A R U</p>
+      <ul>
+        <li><a href="top.html">TOP</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="work.html">WORK</a></li>
+        <li><a href="passion.html">PASSION</a></li>
+        <li><a href="vision.html" class="active">VISION</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="title">
+    <h1>V I S I O N</h1>
+    <p>私 の 将 来</p>
+    <div class="title-border"></div>
+  </div>
+
+  
+  <div class="vision">
+    <div class="vision_text">
+    <h1>デザインを通して感動を与えたい</h1>
+
+    <p>デザインは自分のアイデアをカタチにできる手段ですが、私は自己満足で終わるのではなく
+      見てくれる人に「これ、いいな」と感じてもらえるような、心に残るデザインを目指しています。<br><br> 
+       それが誰かの記憶に残り、行動のきっかけとなるようなデザインをつくりたいと考えています。
+      常に他者の視点を意識し、広い視野と新しい価値観を持つことで、
+      より良い表現にたどり着くだけでなく、それが自分自身の成長にもつながっていくと思っています。<br><br>
+      
+      そうして生まれたデザインが誰かの心を動かし、共感を呼び、
+      結果として「感動」というカタチで人の感情に触れたとき、
+      デザインの力と、それに携わるやりがいの大きさを強く感じると思います。<br><br>
+      
+      将来は、単に情報を伝えるだけではなく、人の心に深く届く、価値あるデザインを届けられるよう、
+      技術と感性の両面を磨き続けていきたいと考えています。
+    </p>
+    </div>
+  </div>
+
+<footer>
+      <div class="footer_container">
+    <div class="footer_text">
+    <h1 style="color: #474747; font-size: 40px;"><span class="first">Y O S H I D A</span> <span class="last">H I K A R U</span></h1>
+    <p style="font-size: 20px;">h.yoshida@fbicenter.co.jp</p>
+    <p></p>
+    </div>
+
+    <div class="footer_menu">
+    <a href="top.html">T O P</a>
+    <a href="top.html">A B O U T</a>
+    <a href="top.html">W O R K</a>
+    <a href="top.html">P A S S I O N</a>
+    <a href="top.html" style="color: rgb(241, 87, 31);">V I S I O N</a>
+    </div>
+    </div>
+  </footer>
+
+  <script>
+
+ // header 要素を取得
+ const header = document.querySelector('header');
+// スクロール時のヘッダー変更処理（1%スクロールしたら実行）
+window.addEventListener('scroll', () => {
+  const scrollY = window.scrollY;
+  const viewportHeight = window.innerHeight;
+
+  if (scrollY > viewportHeight * 0.01) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+});
+
+  </script>
+</body>
+</html>
